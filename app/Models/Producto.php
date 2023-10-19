@@ -12,5 +12,13 @@ class Producto extends Model
     use HasFactory, SoftDeletes;
 
     public $table = "productos";
-    protected $fillable = array("*");
+    protected $fillable = [
+        'nombre',
+        'descripcion',
+        'sku',
+        'precio',
+        'cantidad',
+        'imagen',
+        'id',
+    ];
 }
