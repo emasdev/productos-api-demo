@@ -9,7 +9,23 @@ class ProductosController extends Controller
 {
     public function index()
     {
-        return Producto::all();
+        return Producto::orderBy('nombre')->get();
+    }
+
+    public function filterByNombre($nombre)
+    {
+        return Producto::where('nombre', 'like', '%' . $nombre . '%')->orderBy('nombre')->get();
+        // return Producto::where('nombre', $nombre)->orderBy('nombre')->get();
+    }
+
+    public function filterBySku($sku)
+    {
+        return Producto::where('sku', 'like', '%' . $sku . '%')->orderBy('nombre')->get();
+    }
+
+    public function filterByRange($min, $max)
+    {
+        return Producto::where('precio', '>=', $min)->where('precio', '<=', $max)->orderBy('nombre')->get();
     }
 
     public function store(Request $request)

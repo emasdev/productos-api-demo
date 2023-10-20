@@ -19,4 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('v1/productos/nombre/{nombre}', [ProductosController::class, 'filterByNombre']);
+Route::get('v1/productos/sku/{sku}', [ProductosController::class, 'filterBySku']);
+Route::get('v1/productos/range/{min}/{max}', [ProductosController::class, 'filterByRange']);
+
 Route::apiResource("v1/productos", ProductosController::class);
