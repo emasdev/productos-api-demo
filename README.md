@@ -34,11 +34,28 @@ Iniciar servidor
 
 ##### Producto
 * GET All `http://localhost:8000/api/v1/productos`
+
 * GET Single `http://localhost:8000/api/v1/productos/{id}`
-* POST Create `http://localhost:8000/api/v1/productos` params `{}`
-* PUT Update `http://localhost:8000/api/v1/productos/{id}`
+
+* POST Create `http://localhost:8000/api/v1/productos` body `{
+        "nombre": "Producto",
+        "descripcion": "Aliquid laudantium laboriosam et molestiae eligendi.",
+        "precio": 324.83,
+        "cantidad": 944,
+        "imagen": "https://via.placeholder.com/640x480.png/0011ff?text=producto+nuevo"
+}`
+* PUT Update `http://localhost:8000/api/v1/productos/{id}` body `{
+        "nombre": "Producto",
+        "descripcion": "Aliquid laudantium laboriosam et molestiae eligendi.",
+        "precio": 324.83,
+        "cantidad": 944,
+        "imagen": "https://via.placeholder.com/640x480.png/0011ff?text=producto+nuevo"
+}`
+
 * DELETE destroy `http://localhost:8000/api/v1/productos/{id}`
 
 * GET Filter by name `http://127.0.0.1:8000/api/v1/productos/nombre/{nombre}`
+
 * GET Filter by SKU `http://127.0.0.1:8000/api/v1/productos/sku/{sku}`
+git 
 * GET Filter by rango de precios `http://127.0.0.1:8000/api/v1/productos/sku/{min}/{max}`
