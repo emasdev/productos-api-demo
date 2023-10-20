@@ -1,7 +1,8 @@
 # Laravel Productos REST API
 API para CRUD de productos
 
-![Screenshot](screenshot1.jpg)
+![Screenshot](screenshot1.jpg)![Screen Shot 2023-10-20 at 10 33 46 AM](https://github.com/emasdev/productos-api-demo/assets/13182632/0acd8605-cd16-4502-a6ef-5fbd4b48a382)
+
 
 #### Modelos
 * Producto
