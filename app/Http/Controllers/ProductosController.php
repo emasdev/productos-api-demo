@@ -30,6 +30,7 @@ class ProductosController extends Controller
 
     public function store(Request $request)
     {
+        $request['sku'] =  'pro-' . random_int(100, 999) . substr($request->nombre, -3);
         $inputs = $request->input();
         $producto = Producto::create($inputs);
         return response()->json([

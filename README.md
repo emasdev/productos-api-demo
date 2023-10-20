@@ -34,7 +34,7 @@ Iniciar servidor
 ##### Producto
 * GET All `http://localhost:8000/api/v1/productos`
 * GET Single `http://localhost:8000/api/v1/productos/{id}`
-* POST Create `http://localhost:8000/api/v1/productos`
+* POST Create `http://localhost:8000/api/v1/productos` params `{}`
 * PUT Update `http://localhost:8000/api/v1/productos/{id}`
 * DELETE destroy `http://localhost:8000/api/v1/productos/{id}`
 
