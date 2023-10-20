@@ -1,6 +1,8 @@
 # Laravel Productos REST API
 API para CRUD de productos
 
+![Screenshot](screenshot1.jpg)
+
 #### Modelos
 * Producto
 
@@ -23,6 +25,9 @@ Correr las migraciones para la base de datos.
 ##### Database Seeding
 Agregar datos dummy a db
 ###### `php artisan db:seed`
+##### Start server
+Iniciar servidor
+###### `php artisan serve`
 
 ### API EndPoints
 
